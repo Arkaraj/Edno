@@ -1,6 +1,12 @@
 // import { serve } from "https://deno.land/std/http/server.ts";
 // import * as bcrypt from "https://deno.land/x/bcrypt/mod.ts";
-// const server = serve({ port: 8000 });
+// const handler = (request: Request) => {
+//   const body = `Your user-agent is:\n\n${
+//     request.headers.get("user-agent") ?? "Unknown"
+//   }`;
+//   return new Response(body, { status: 200 });
+// };
+// const server = serve(handler);
 // console.log("listening to http://localhost:8000/");
 // console.log(await bcrypt.hash("thisIsRandomStuff"));
 // for await (const req of server) {
